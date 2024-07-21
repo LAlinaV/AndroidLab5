@@ -7,12 +7,117 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Started"
+        app:layout_constraintBottom_toStartOf="@id/lat"
+        app:layout_constraintEnd_toStartOf="@id/startV"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        app:layout_constraintBottom_toTopOf="@id/lon"
+        app:layout_constraintEnd_toStartOf="@id/latV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start" />
+    <TextView
+        android:id="@+id/lon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longtitude:"
+        app:layout_constraintBottom_toTopOf="@id/lat"
+        app:layout_constraintEnd_toStartOf="@id/lonV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alt" />
+
+    <TextView
+        android:id="@+id/alt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude:"
+        app:layout_constraintBottom_toTopOf="@id/elT"
+        app:layout_constraintEnd_toStartOf="@id/altV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lon" />
+    <TextView
+        android:id="@+id/elT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elapsed Time:"
+        app:layout_constraintBottom_toTopOf="@id/startB"
+        app:layout_constraintEnd_toStartOf="@id/elTV"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alt" />
+    <TextView
+        android:id="@+id/startV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Started"
+        app:layout_constraintBottom_toStartOf="@id/latV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/start"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/latV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude:"
+        app:layout_constraintBottom_toTopOf="@id/lonV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lat"
+        app:layout_constraintTop_toBottomOf="@id/startV" />
+    <TextView
+        android:id="@+id/lonV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longtitude:"
+        app:layout_constraintBottom_toTopOf="@id/latV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/lon"
+        app:layout_constraintTop_toBottomOf="@id/altV" />
+
+    <TextView
+        android:id="@+id/altV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude:"
+        app:layout_constraintBottom_toTopOf="@id/elTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/alt"
+        app:layout_constraintTop_toBottomOf="@id/lonV" />
+    <TextView
+        android:id="@+id/elTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elapsed Time:"
+        app:layout_constraintBottom_toTopOf="@id/stopB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/elT"
+        app:layout_constraintTop_toBottomOf="@id/altV" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startB"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stopB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/elT"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopB"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/startB"
+        app:layout_constraintTop_toBottomOf="@id/elTV"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
