@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">task1</string>
-    <string name="elapsed">%f s</string>
+    <string name="elapsed">Elapsed Time: %f s</string>
+    <string name="latitude">Latitude: %f</string>
+    <string name="started">Started: %s</string>
+    <string name="longitude">Longitude: %f</string>
 </resources>
