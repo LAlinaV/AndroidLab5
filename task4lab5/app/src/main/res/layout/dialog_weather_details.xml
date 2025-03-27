@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Название города -->
+    <TextView
+        android:id="@+id/dialogCityName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Город"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Температура -->
+    <TextView
+        android:id="@+id/dialogTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Температура: --°C"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Описание погоды -->
+    <TextView
+        android:id="@+id/dialogWeatherDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Описание: --"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Влажность -->
+    <TextView
+        android:id="@+id/dialogHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Влажность: --%"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Скорость ветра -->
+    <TextView
+        android:id="@+id/dialogWindSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Скорость ветра: -- м/с"
+        android:layout_marginBottom="8dp" />
+
+</LinearLayout>
