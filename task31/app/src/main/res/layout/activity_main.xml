@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:padding="16dp">
+
+    <!-- Строка для широты -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Широта:"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не определено"
+            android:textSize="18sp"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Строка для долготы -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Долгота:"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не определено"
+            android:textSize="18sp"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Строка для скорости -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Скорость:"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не определено"
+            android:textSize="18sp"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Строка для точности -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Точность:"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не определено"
+            android:textSize="18sp"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- Строка для времени обновления -->
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Время:"
+            android:textSize="18sp"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Не определено"
+            android:textSize="18sp"
+            android:padding="8dp" />
+    </TableRow>
+
+    <!-- LinearLayout для кнопок -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Старт"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Стоп" />
+    </LinearLayout>
+</TableLayout>
